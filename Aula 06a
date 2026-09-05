@@ -1,0 +1,13 @@
+
+n1 = int(input('Digite um numero: '))
+n2 = int(input('Digite outro numero: '))
+s = n1 + n2
+print('A soma entre',n1,'e',n2,'é',s)
+Tipos de primitivos
+int = 1, -4, 7, 9487, 0 numero inteiros
+float = 4.5, 0.076, -15.223 com casas decimais
+bool = True = verdadeiro False = falso
+str = "Olá", "7.5", "" letras ou nome etc não podemos fazer conta
+
+print('A soma vale',s)
+print('A soma entre {} e {} vale {}'.format(n1,n2,s))
