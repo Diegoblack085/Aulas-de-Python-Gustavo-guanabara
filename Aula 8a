@@ -1,0 +1,52 @@
+frase = 'Curso em Video Python'
+# para no valor mas o ultimo não pega
+print(frase[9:14])
+print(frase[9:20])
+print(frase[9:20:2])
+print(frase[:5])
+print(frase[15:])
+print(frase[9::3])
+print(len(frase))
+# LEN mostra o tamanho da string
+print('Mostra quanto (o) tem: ',frase.count('o'))
+
+# .count('') mostra o tanto do caractere pedido tem na frase
+print('Mostra quantos (o) tem do 0 ao 13 ',frase.count('o',0,13))
+
+# Mostra o tanto de letra o do 0 ate o 13 ignorando o ultimo bloco
+print('Encontra onde começa a frase (deo) ',frase.find('deo'))
+
+# Encontra o que eu digitar em 'aspas' e mostra onde começa
+print('Encontra onde começa mas se não achar retorna (-1) ',frase.find('Android'))
+# se o valor retornado for -1 o texto ou caractere não foi encontrado
+
+print('Fala True se tiver e False senão ','curso' in frase)
+# Mostra True or False se tiver ou não tiver
+
+print('Faz a troca das frases a segunda pela primeira mas não diretamente ',frase.replace('Python','Android'))
+# Troca a primeira palavra pela segunda
+
+print('Deixa tudo maiusculo ',frase.upper())
+# Deixa tudo que já for maiuscula e muda as minusculas para maiuscula
+
+print('Deixa tudo minusculo ',frase.lower())
+# Faz o contrario de upper deixando tudo minusculo e se ja tiver deixa
+
+print('Deixa a primeira letra da frase maiusculo ',frase.capitalize())
+#  Deixa apenas a primeira letra em Maiusculo e o restante em minusculo
+
+print('Deixa a primeira letra de todas a palavra em maiusculo ',frase.title())
+# Transforma as primeiras letras das frases em maiusculo por exemplo diego Santana
+# Em title ficaria print(frase.title())
+
+print('Tira os espaços do começo e do fim:',frase.strip())
+# Antes de alguns comando pode ser usado para mostrar de onde começar
+# Left esquerda como por exemplo frase.lstrip()) tira os espaços da esquerda <-
+# Right Direita frase.lstrip()) como por exemplo frase.rstrip()) tira os espaços da direita ->
+# Tira os espaços do começo e do fim frase.strip())
+
+print(frase.split())
+# Mostra as frase separadas por ,'', e reseta sempre que acaba a palavra
+
+print('-'.join(frase))
+# Mostra o texto inserido nos espaços
