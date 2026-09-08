@@ -1,0 +1,20 @@
+frase = 'curso em video python'
+# para no valor mas o ultimo não pega
+print(frase[9:14])
+print(frase[9:20])
+print(frase[9:20:2])
+print(frase[:5])
+print(frase[15:])
+print(frase[9::3])
+print(len(frase))
+# LEN mostra o tamanho da string
+print(frase.count('o'))
+# .count('') mostra o tanto do caractere pedido tem na frase
+print(frase.count('o',0,13))
+# Mostra o tanto de letra o do 0 ate o 13 ignorando o ultimo bloco
+print(frase.find('deo'))
+# Encontra o que eu digitar em 'aspas' e mostra onde começa
+print(frase.find('Android'))
+# se o valor retornado for -1 o texto ou caractere não foi encontrado
+print('curso' in frase)
+
