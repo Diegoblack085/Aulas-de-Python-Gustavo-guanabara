@@ -1,0 +1,9 @@
+import random
+aswer_computer = random.randint(1,10)
+print('Bem vindo ao jogo!!')
+print('Tente descobrir o numero de 1 a 10!')
+awser_player =  int(input('Digite seu palpite: ').strip())
+if awser_player == aswer_computer:
+    print('Parabéns você acertou!')
+else:
+    print('Errou, essa foi por pouco! O numero era {}'.format(aswer_computer))
