@@ -1,0 +1,31 @@
+from time import sleep
+saldo = 1000
+saque = 0
+print('\033[0;36m =-' * 20)
+print('\033[0;36m                        Seja bem vindo!')
+print('\033[0;36m =-' * 20)
+n = str(input('\033[0;35mDigite seu nome: \033[m ').strip())
+print(f'\033[0;31mOlá {n} o que você deseja hoje: \033[m')
+r = 1
+while r != 4:
+    r = input('\033[33m[1] Depositar \n'
+          '[2] Sacar \n'
+          '[3] Checar Saldo \n'
+          '[4] Sair \033[m\n')
+    if r == '1':
+        valor = float(input('\033[34mDigite o valor do deposito: '))
+        saldo = saldo + valor
+        print('Seu saldo atual é R${}\033[m'.format(saldo))
+        sleep(2)
+    if r == '2':
+        saque = int(input('\033[37mQual o valor do saque: '))
+        saldo = saldo - saque
+        print('Seu saldo atual é RS{}\033[m'.format(saldo))
+        sleep(2)
+    if r == '3':
+        print('\033[35mSeu saldo é R${}\033[m'.format(saldo))
+        sleep(2)
+    if r == '4':
+        print('Programa finalizado com sucesso!')
+        quit()
+        
